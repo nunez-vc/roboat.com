@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+@font-face{
+    font-family: "Satoshi-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url(./Fonts/Satoshi-Bold.otf);
+}
+
+@font-face{
+    font-family: "Satoshi-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url(./Fonts/Satoshi-Medium.otf);
+}
+
+@font-face{
+    font-family: "Satoshi-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./Fonts/Satoshi-Regular.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  min-height: 105vh;
+  width: 100%;
+  background: url(./Images/about-us-bg.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 1.5% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  width: 85px;
+}
+
+.nav-links{
+  flex: 1;
+  padding-top: 0px;
+  text-align: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Satoshi-Bold";
+}
+
+.nav-links ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #a45729;
+  margin: auto;
+  display: block;
+  transition: 0.5s;  
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.AboutUs{
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.title {
+  width: 40%;
+  position: absolute;
+  color: black;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-bottom: 0%;
+  margin-left: 0%;
+}
+
+.title p{
+  font-size: 70px;
+  font-family: "Satoshi-Bold";
+  -webkit-text-stroke-width: 2px;
+  filter: drop-shadow(3.5px 3.5px 1px rgba(0, 0, 0, 0.3));
+  text-align: center;
+}
+
+.Description1 {
+  width: 70%;
+  position: absolute;
+  color: black;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-bottom: 0%;
+  margin-left: 0%;
+}
+
+.Description1 p{
+  font-size: 25px;
+  font-family: "Satoshi-Bold";
+  text-align: center;
+}
+
+.Description2 {
+  width: 90%;
+  position: absolute;
+  color: black;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  line-height: 1.5;
+}
+
+.Description2 p{
+  font-size: 25px;
+  font-family: "Satoshi-Regular";
+  text-align: center;
+}
+
+.creators{
+  min-height: 100vh;
+  width: 100%;
+  background: url(./Images/creators-section.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
